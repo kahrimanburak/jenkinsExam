@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MainTest {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeAll
     public static void setupDriver() {
@@ -26,13 +26,6 @@ public class MainTest {
         driver.quit();
     }
 
-    @Test
-    void openGoogle() {
 
-    driver.get("https://www.youtube.com.tr/");
-
-    Assertions.assertTrue(driver.getTitle().contains("YouTube"));
-
-    }
 
 }
